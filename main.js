@@ -20,7 +20,7 @@ function gotResult(error, results) {
         console.error(error)
     } else {
         console.log(results);
-        document.getElementById("result_object").innerHTML = results[0].label;
-        document.getElementById("result_accuracy").innerHTML = results[0].confidence.toFixed(3);
+        document.getElementById("name").innerHTML = results[0].label;
+        document.getElementById("accuracy").innerHTML = results[0].confidence.toFixed(3);
     }
 }
